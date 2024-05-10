@@ -1,73 +1,38 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Screen Stats
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Descrição
+Screen Stats é uma aplicação web desenvolvida com o framework NestJS para fornecer uma plataforma de streaming de vídeos. O objetivo principal da aplicação é permitir que os usuários visualizem uma variedade de filmes e séries disponíveis para assistir, além de fornecer recursos como autenticação de usuários, gerenciamento de perfil e estatísticas de visualização.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Funcionalidades Principais
+- Visualização de filmes e séries disponíveis
+- Autenticação de usuários com JWT
+- CRUD completo de usuários
+- Estatísticas de visualização de conteúdo
 
-## Description
+## Tecnologias Utilizadas
+- **NestJS**: Framework de aplicativo back-end baseado em Node.js
+- **TypeORM**: ORM para interagir com bancos de dados relacionais
+- **JWT (JSON Web Tokens)**: Para autenticação de usuários
+- **PostgreSQL**: Banco de dados relacional para armazenar dados de usuário e conteúdo
+- **Angular**: Framework de desenvolvimento de aplicativos da web para o front-end
+- **HTML/CSS**: Para a estruturação e estilização das páginas
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Estrutura do Projeto
+O projeto está estruturado da seguinte forma:
+- **src/**
+  - **auth/**: Contém arquivos relacionados à autenticação de usuários, como guards e estratégias JWT.
+  - **movies/**: Arquivos relacionados à manipulação de filmes e séries, incluindo controladores, serviços e entidades.
+  - **users/**: Arquivos relacionados à manipulação de usuários, incluindo controladores, serviços, entidades e DTOs.
+  - **app.module.ts**: Arquivo de configuração principal do NestJS, onde os módulos são importados e configurados.
+  - **main.ts**: Arquivo de entrada do aplicativo, onde o aplicativo NestJS é inicializado.
 
-## Installation
+## Configuração
+1. **Instalação de Dependências**: Execute `npm install` na raiz do projeto para instalar todas as dependências necessárias.
+2. **Configuração do Banco de Dados**: Certifique-se de ter um servidor PostgreSQL em execução e configure as credenciais de acesso no arquivo `ormconfig.json`.
+3. **Execução do Servidor**: Execute `npm run start:dev` para iniciar o servidor de desenvolvimento localmente.
 
-```bash
-$ npm install
-```
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para relatar problemas ou propor novos recursos. Se desejar contribuir com código, por favor, siga as diretrizes de contribuição do projeto.
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+## Licença
+Este projeto é licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
